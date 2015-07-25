@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+    
+    <hibernate-mapping>
+    	<class name="entities.Emp" table="t_emp">
+    		<id name="id" column="id" type="integer">
+    			<generator class="native"></generator>  <!-- 根据方言设置 -->
+    		</id>
+    		<property name="ename"></property>
+    		<property name="salary"></property>
+    		<property name="age"></property>
+    	</class>
+    </hibernate-mapping>
